@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "font";
+  src: url("/assets/plumb-regular.otf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "font";
+  src: url("/assets/plumb-bold.otf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+html,body {
+  margin: 0;
+  padding: 0;
+  font-family: font, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+a {
+  color: #ff7f50;
+}
+
+.centered{
+  width: 1500px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+header .centered {
+  display: flex;
+  justify-content: space-between;
+  color: #fefefe;
+}
+
+header .centered nav {
+  display: flex;
+}
+
+header .centered nav a {
+  color: #fefefe;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 1;
+}
+
+header .centered nav a:last-child,
+header .centered nav a:last-child:hover,
+header .centered nav a:last-child.nuxt-link-exact-active {
+  color: #ff7f50;
+}
+
+header .centered nav a:hover {
+  color: #bbbbbb;
+}
+
+header .centered nav a.nuxt-link-exact-active {
+  color: #bbbbbb;
+}
+
+/*contacts*/
+header .centered .header-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-weight: 700;
+  line-height: 1em;
+  padding: 4px 0px;
+  box-sizing: border-box;
+}
+
+header .centered .header-contacts .header-contacts-name {
+  font-size: 28px;
+  margin: auto;
+}
+
+header .centered .header-contacts .header-contacts-phone {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto 0;
+}
+
+header .centered .header-contacts .header-contacts-phone a {
+  color: #bbbbbb;
+  margin: 10px;
+}
