@@ -34,8 +34,15 @@ export default {
     '@nuxtjs/sitemap',
   ],
 
+  serverMiddleware: {
+    '/api': '~/api',
+  },
+
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
-  axios: {},
+  axios: {
+    baseURL: 'http://localhost:3000',
+    browserBaseURL: 'http://localhost:3000',
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
